@@ -1,0 +1,419 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family:'Poppins', sans-serif ;
+}
+body{
+     color: #fff;
+     background: #050303;
+     overflow: hidden;
+
+}
+.m1{
+    min-height: 100vh;
+    background-image: url('Qbg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; 
+    pointer-events: auto;
+    transition: .3s ease;
+}
+
+
+.m1.active{
+   filter: blur(10px);
+   pointer-events: none;
+}
+
+.container1{
+    display: flex;
+    height: 100vh;
+    width: 200%;
+}
+
+.home{
+    position: relative;
+    left: -50% ;
+     width: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     color: black;
+}
+.home-content{
+    width: 500px;
+    height: 310px;
+    background-color:rgba(255, 255, 255, 0.999);
+    margin-left:80px;
+    border-radius: 6px;
+}
+.home-content h1{
+    padding-top: 20px;
+    margin-left: 155px;
+    padding-bottom: 10px;
+    text-shadow: 0 0 4px rgb(63, 62, 62);
+    font-weight: 700;
+}
+.home-content p{
+    font-size: 16px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-weight: 400;
+    text-align: center;
+}
+.home-content .start-btn{
+    margin-left: 190px;
+    width: 130px ;
+    height: 50px;
+    border: 2px solid black;
+    background-color: aqua;
+    outline: none;
+    border-radius: 6px;
+    box-shadow:0 0 10px rgb(48, 47, 47) ;
+    margin-top: 30px ;
+    font-weight: 600;
+    font-size: 17px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.home-content .start-btn:hover{
+  background-color: black;
+  color: #fff;
+  box-shadow: none;
+}
+.popup-info{
+   position: absolute;
+   top: 50%;
+   left:50%;
+   transform: translate(-50%,-50%) scale(.9);
+   width:500px ;
+   background: rgb(38, 238, 238);
+   border-radius: 8px;
+   padding: 10px 25px;
+   opacity: 0;
+   pointer-events: none; 
+   transition: .3s ease;
+   margin-left: 40px;
+}
+
+.popup-info.active{
+    opacity: 1;
+    pointer-events: auto;
+    transform: translate(-50%,-50%) scale(1);
+
+}
+.popup-info h2{
+    font-size: 40px;
+    color:black;
+}
+.popup-info .info{
+    display: inline-block;
+    font-size: 15px;
+    color: black;
+    font-weight: 500;
+    margin: 4px 0;
+}
+.popup-info .btn-group1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #090000;
+    margin-top: 10px;
+    padding: 15px 0 7px;
+}
+
+.popup-info .btn-group1 .info-btn{
+     display: inline-flex;
+     justify-content: center;
+     align-items: center;
+     width:100px;
+     height: 40px;
+     background: #010708;
+     color: #fff;
+     outline: none;
+     border-radius: 8px;
+     border: 2px solid white;
+     box-shadow: 0 0 4px #010708;
+     text-decoration: none;
+     font-size:15px ;
+     font-weight: 500;
+     cursor: pointer;transition: .5s;
+}
+
+.popup-info .btn-group1 .info-btn:nth-child(1){
+      background: transparent ;
+      color:black ;
+}
+
+.popup-info .btn-group1 .info-btn:nth-child(1):hover{
+    background:black ;
+    color:white ;
+}
+
+.popup-info .btn-group1 .info-btn:nth-child(2){
+    background: transparent ;
+    color:black ;
+}
+.popup-info .btn-group1 .info-btn:nth-child(2):hover{
+    background: rgb(93, 247, 247) ;
+    border-color: rgb(1, 12, 8);
+    color: black;
+}
+
+.quiz-sec{
+    position: relative;
+    left: -50%;
+    /* left:0; */
+    width: 100%;
+    background: rgb(217, 252, 249) ;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    transition: .8s ease-in-out;
+    transition-delay: .25s;
+}
+
+.quiz-sec.active{
+     left: 0;
+}
+
+.quiz-sec .quiz-box{
+    position: relative;
+    width: 500px;
+    background: rgb(43, 220, 247);
+    border: 2px solid rgb(5, 5, 5);
+    box-shadow:0 0 10px rgb(25, 25, 25) ;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 30px ;
+    opacity: 0;
+    pointer-events: none;
+    transform: scale(.9);
+    transition: .3s ease;
+    transition-delay: 0s;
+}
+
+.quiz-sec .quiz-box.active{
+    opacity: 1;
+    pointer-events: auto;
+    transform: scale(1);
+    transition: 1s ease;
+    transition-delay: 1s;
+}
+
+.quiz-box h1{
+       font-size: 32px;
+      text-align: center;
+      background:linear-gradient(45deg, transparent, #f3f7f8, transparent ) ;
+      border-radius: 6px;
+}
+
+.quiz-box .quiz-header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 0;
+        border-bottom: 2px solid rgb(21, 21, 21);
+        margin-bottom: 20px;
+}
+
+.quiz-header span{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+ .quiz-header .header-score{
+    background: #fff;
+    border-radius: 3px;
+    padding: 7px;
+ }
+
+ .quiz-box .quetion-text{
+    font-size: 22px;
+    font-weight: 600;
+ }
+
+ .option-list .option{
+     width: 100%;
+     padding: 12px;
+     background: transparent;
+     border:2px solid rgba(255, 255, 255, .4);
+     border-radius: 4px;
+     font-size: 15px;
+     margin: 14px 0;
+     cursor: pointer;
+     transition: .3s;
+ }
+
+ .option-list .option:hover{
+        background: rgba(11, 168, 179, 0.1);
+        border-color:rgba(9, 9, 9, 0.2) ;
+ }
+
+ .option-list .option.correct{
+    background: rgb(43, 220, 247) ;
+    color: #099240;
+    border-color: #0aa72c;
+ }
+
+ .option-list .option.incorrect{
+     background: rgb(43, 220, 247) ;
+     color: red;
+     border-color: red;
+}
+
+ .option-list .option.disabled{
+     pointer-events: none;
+} 
+
+.quiz-box .quiz-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 2px solid rgb(16, 15, 15);
+    padding-top: 15px ;
+    margin-top: 20px;
+}
+
+.quiz-footer .question-total{
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.quiz-footer .next-btn{
+    background-color: rgb(26, 207, 207);
+    width:100px ;
+    height:45px ;
+    border: 2px solid rgba(11, 11, 11, 0.2);
+    outline: none;
+    border-radius: 6px;
+    font-size: 15px;
+    color: #010708;
+    font-weight: 600;
+    cursor: pointer;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.quiz-footer .next-btn.active:hover{
+  background-color: #29393e;  
+  color: #4cecfb;
+}
+
+.quiz-footer .next-btn.active{
+    pointer-events: auto;
+    background-color: #010708;
+    border-color: #f3f7f8;
+    color: #4cecfb;
+}
+
+.quiz-sec .result-box{
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%) scale(.9);
+     width: 500px;
+     background: rgb(43, 220, 247);
+     border: 2px solid black;
+     border-radius: 6px;
+     padding: 20px;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     opacity: 0;
+     pointer-events: none;
+     transition: .3s ease;
+}
+
+.quiz-sec .result-box.active{
+    opacity: 1;
+    pointer-events: auto;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.result-box h2{
+    font-size: 40px;
+}
+
+.result-box .percentage-container{
+    width: 300px;
+    /* background: white; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin:20px 0 40px ;
+}
+
+.percentage-container .circular-progress{
+    position:relative ;
+    width:250px ;
+    height: 250px;
+    background-color: conic-gradient(black  3.4deg, rgba(20, 28, 28, 0.1)0deg);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+     align-items: center;
+}
+
+.percentage-container .circular-progress::before{
+    content: '';
+    position: absolute;
+    width: 210px;
+    height: 210px;
+    background: #025a69;
+    border-radius: 50%;
+}
+
+.circular-progress .progress-value{
+    position: relative;
+    font-size: 45px;
+    font-weight: 600;
+}
+
+.percentage-container .score-text{
+    font-size: 25px;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+.result-box .buttons{
+    display: flex;
+}
+
+.buttons button{
+    width: 130px;
+    height: 47px;
+    background:black ;
+    border: 2px solid white;
+    outline: none;
+    border-radius: 6px;
+    font-size: 15px;
+    color: aqua;
+    font-weight: 500;
+    margin: 0 20px 20px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.buttons button:nth-child(1):hover{
+    background: #13bbd8;
+    border-color: #047670;
+    color:#090303;
+}
+
+
+.buttons button:nth-child(2){
+    background: transparent;
+    color:black;  
+}
+
+.buttons button:nth-child(2):hover{
+    background: black;
+    color: aqua;
+}

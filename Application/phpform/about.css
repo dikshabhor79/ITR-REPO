@@ -1,0 +1,139 @@
+
+  body{
+    width:100%;
+  }
+  /*about section  */
+
+  .mainaboutsection{
+    display: flex;
+    background-color:rgb(203, 250, 246);
+    box-sizing: border-box;
+    width:100%;
+    
+}
+
+.about-info{
+    /* margin: 60px; */
+    width:90%;
+    margin:20px 30px 20px 40px;
+    padding:20px;
+}
+.about-info h1{
+    display: none;
+}
+
+.option-a{
+    margin:15px;
+    display: flex;
+    
+   
+}
+.option-a p a{
+    color: rgb(91, 86, 95);
+}
+
+
+.about-p2{
+    font-family: cursive;
+    font-size:35px;
+    margin-top:10px;
+    color:rgb(13, 17, 17);
+    font-weight: 700;
+}
+.about-p3{
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-size:16px;
+margin-top:20px;
+}
+.about-options{
+    display:flex;
+}
+.option-a{
+   
+    width:100%;
+}
+.option-a1 {
+margin-top:30px;
+/* margin-bottom:30px; */
+font-weight: 800;
+font-size:17px;
+justify-content: space-evenly;
+}
+.about-options .option-a .option-a1 a{
+    color:black;
+    text-decoration: none;
+}
+.about-options .option-a .option-a1 a:hover{
+    text-decoration: none;
+    color:rgb(77, 74, 74);
+}
+
+.mainaboutsection .about-img img{
+    height:350px;
+    width:350px;
+    margin:20px 50px 20px 80px;
+    border:2px;
+    border-style: ridge;
+    border-color:black ;
+    border-radius: 6px;
+    box-shadow: 1px 1px 10px black;
+   
+}
+
+/* our mission */
+.mainaboutmissionsection{
+    background-color:  rgb(217, 252, 249);
+   }
+   .mainaboutmissionsection .aboutmission-img{
+      margin-left:150px;
+      
+   }
+   .mainaboutmissionsection .aboutmission-img img{
+       height: 300px;
+       width: 500px;
+       margin:5px 5px 5px 5px;
+       border:2px solid black;
+   }
+   .mainaboutmissionsection .aboutmission-img img:hover{
+    box-shadow: 1px 1px 10px blue;
+    border:none;
+    transition: 0.5s;
+   }
+   
+   .aboutmission-info1{
+       font-size: 35px;
+       font-weight: 800;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       color:rgb(6, 33, 63);
+      
+       
+   }
+   .aboutmission-info1 p{
+       margin-top: 20px;
+       font-family :Georgia, serif;
+   }
+   .aboutmission-info1 p:hover{
+    color:blue;
+    opacity: 0.5px;
+   }
+   .aboutmission-info2 {
+       font-size: 16px;
+       font-weight: 400;
+       display: flex;
+       
+       justify-content: center;
+       align-items: center;
+       color: #333;
+       font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+   }
+   .aboutmission-info2 p{
+    
+     margin:30px;
+       font-family:Tahoma;
+   }
+
+   
+
+  

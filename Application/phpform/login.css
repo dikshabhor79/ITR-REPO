@@ -1,0 +1,42 @@
+body {
+    background: url('/C:/Users/ashwini/Desktop/appli/assets/loginbgimg2.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card {
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.card-body {
+    padding: 2rem;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    padding: 0.75rem 1.25rem;
+    font-size: 1rem;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.forgot-password-link {
+    color: #007bff;
+}
+
+.forgot-password-link:hover {
+    text-decoration: underline;
+}
