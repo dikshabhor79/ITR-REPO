@@ -27,7 +27,7 @@ For detailed instructions on using the platform, check out the User Guide and th
 
 
 # Key Features
-Course Creation: Easy-to-use tools for managing courses.
+Course Creation: Easy-to-use tools for managing courses.<br>
 Interactive Content: Support for videos, quizzes.
 
 
