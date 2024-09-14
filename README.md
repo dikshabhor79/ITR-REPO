@@ -15,10 +15,8 @@ To get started with the E-Learning Platform, follow these steps:
 <b>Copy code</b>
 git clone https://github.com/dikshabhor79/ITR-REPO.git.
 
-2. Navigate to the Project Directory:
-<br>
-    1) cd Application 
-<br>
+2. Navigate to the Project Directory.<br>
+    1) cd Application  <br>
     2) cd phpform
 
 
