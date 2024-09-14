@@ -20,10 +20,6 @@ git clone https://github.com/dikshabhor79/ITR-REPO.git.
     1) cd Application  <br>
     2) cd phpform
 
-
-
-
-
 # Usage
 Once the application is running, you can access the following features:
 
@@ -47,8 +43,6 @@ Before you begin, ensure you have met the following requirements:<br>
 1) Visual Studio : [Visual Studio](https://visualstudio.microsoft.com/)
 
 - **WAMP Server**: We recommend using WAMP to manage your web server, databases, and PHP.
-
-## Setting Up WAMP
 
 ### Step 1: Download WAMP
 
